@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Utilization Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.1.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+        "react/": "https://esm.sh/react@^19.1.0/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="selection-info" id="selection-info">
+            <div>Equipment: <span id="selected-equipment"></span></div>
+            <div>Start: <span id="start-time"></span></div>
+            <div>End: <span id="end-time"></span></div>
+        </div>
+
+        <div class="header">
+            <h1>Equipment Utilization Tracker</h1>
+            <div class="tabs">
+                <div class="tab active" onclick="showTab('tracker')">Tracker</div>
+                <div class="tab" onclick="showTab('meeting')">Meeting View</div>
+                <div class="tab" onclick="showTab('admin')">Admin</div>
+            </div>
+        </div>
+
+        <div id="tracker" class="timeline-container">
+            <div class="equipment-rows" id="equipment-rows"></div>
+        </div>
+
+        <div id="meeting" class="meeting-view">
+            <h2>Morning Meeting Overview</h2>
+            <div id="booking-cards"></div>
+        </div>
+
+        <div id="admin" class="admin-panel">
+            <h2>Admin Panel</h2>
+            
+            <div class="admin-tabs">
+                <div class="admin-tab active" onclick="showAdminTab('relations')">Relations Manager</div>
+                <div class="admin-tab" onclick="showAdminTab('equipment')">Equipment Manager</div>
+                <div class="admin-tab" onclick="showAdminTab('builder')">Relations Builder</div>
+            </div>
+
+            <div id="relations" class="admin-tab-content">
+                <!-- Relations Manager content -->
+            </div>
+
+            <div id="equipment" class="admin-tab-content" style="display: none;">
+                <!-- Equipment Manager content -->
+            </div>
+
+            <div id="builder" class="admin-tab-content" style="display: none;">
+                <!-- Relations Builder content -->
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="booking-modal" id="booking-modal">
+            <!-- Booking modal content -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+:root {
+    --mechanical: #FF9AA2;
+    --electrical: #FFB7B2;
+    --operations: #FFDAC1;
+    --technicians: #E2F0CB;
+    --instrumentation: #B5EAD7;
+    --management: #C7CEEA;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.selection-info {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    padding: 8px 15px;
+    background-color: #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #1abc9c;
+}
+
+.timeline-container {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.equipment-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-row {
+    display: flex;
+    min-height: 60px;
+    border-bottom: 1px solid #eee;
+    align-items: stretch;
+}
+
+/* Rest of the CSS styles... (would continue with all the other styles from the original file) */

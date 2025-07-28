@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "equipment": "stack-811",
+        "section": "mechanical",
+        "systems": ["conveyor", "motor"],
+        "faults": ["trip", "run skew", "conveyor torn"]
+    },
+    {
+        "id": "2",
+        "equipment": "stack-812",
+        "section": "electrical",
+        "systems": ["pump", "valve"],
+        "faults": ["power failure", "leakage"]
+    },
+    {
+        "id": "3",
+        "equipment": "stack-813",
+        "section": "operations",
+        "systems": ["pipe", "sensor"],
+        "faults": ["blockage", "wear"]
+    },
+    {
+        "id": "4",
+        "equipment": "gg1-filters",
+        "section": "technicians",
+        "systems": ["filter", "pump"],
+        "faults": ["blockage", "leakage"]
+    },
+    {
+        "id": "5",
+        "equipment": "810-3000",
+        "section": "instrumentation",
+        "systems": ["sensor", "valve"],
+        "faults": ["failure", "wear"]
+    },
+    {
+        "id": "6",
+        "equipment": "810-3100",
+        "section": "management",
+        "systems": ["conveyor", "motor"],
+        "faults": ["trip", "maintenance"]
+    },
+    {
+        "id": "7",
+        "equipment": "5810800",
+        "section": "mechanical",
+        "systems": ["pipe", "valve"],
+        "faults": ["leakage", "blockage"]
+    }
+]
